@@ -1,5 +1,5 @@
-# Day 04 - Part 1
-print "Day 04 - Part 1"
+# Day 04 - Part 2
+print "Day 04 - Part 2"
 
 """
 byr (Birth Year)
