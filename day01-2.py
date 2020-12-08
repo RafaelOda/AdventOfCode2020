@@ -1,5 +1,5 @@
 # Day 01 - Part 1
-print "Day 01 - Part 1"
+print "Day 01 - Part 2"
 
 with open("./day01-input.txt") as f:
 	content = f.read().splitlines()
@@ -13,6 +13,8 @@ except TypeError as e:
 count_of_numbers = len(numbers)
 
 for i in xrange(count_of_numbers):
-	for j in xrange(i, count_of_numbers):
-		if numbers[i] + numbers[j] == 2020:
-			print numbers[i], numbers[j], numbers[i] * numbers[j]
+	for j in xrange(i + 1, count_of_numbers):
+		for k in xrange(j + 1, count_of_numbers):
+			if numbers[i] + numbers[j] + numbers[k] == 2020:
+				print numbers[i], numbers[j], numbers[k]
+				print numbers[i] * numbers[j] * numbers[k]
