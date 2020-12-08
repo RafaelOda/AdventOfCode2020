@@ -1,4 +1,4 @@
-# Day 01 - Part 1
+# Day 01 - Part 2
 print "Day 01 - Part 2"
 
 with open("./day01-input.txt") as f:
